@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>EXERCÍCIOS</title>    
+    <style>
+        /*parte superior*/
+        .titulo, .paragrafo{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .paragrafo{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 10px;
+        }
+        /*barra principal*/
+        .barra{
+            list-style-type: none;
+            padding: 5px;
+            background-color: rgb(166, 0, 0);
+            overflow: hidden;
+            text-align: center;
+            color: beige;
+            float: left;
+            }
+        .barra li {
+            display: inline;
+        }
+        .barra li a {
+            display: inline-block;
+            color: #ddd;
+            padding: 14px 46px;/*tamanho*/
+            text-decoration: none;
+        }
+        .barra li a:hover {
+            background-color: #ffb0b0;
+        }/*para mudar de cor quando passar o mouse*/
+        /*login*/
+        .login{
+            display: flex;
+            background-color: rgb(164, 87, 86);
+            width: center;
+            margin: 50px;
+            padding: 20px;
+            border-color: rgb(250, 121, 121);
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(246, 224, 224, 0.1);
+            text-align: center;
+            border: 5px solid rgb(254, 189, 189);
+            color: beige;
+            justify-content: center;
+        }
+        /*botão de login*/
+        .buttonlogin{
+            width: 20%;
+            margin-top: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: 3px solid rgb(254, 189, 189);
+        }
+        
+        /*listas, definição geral*/
+        .container-lista {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .primeira, .segunda, .caixa {
+            flex: 1;
+            background-color: rgb(255, 155, 155); 
+            border: 5px solid rgb(244, 192, 192);
+            padding: 10px;
+            margin: 5px;
+            width: 40%; 
+            color: beige;
+            border-radius: 30px;
+            height: 30vh; 
+            justify-content: space-between;
+        }
+        .segunda{
+            background-color: rgb(209, 68, 68);
+        }/*definição apenas a cor*/
+        .caixa{
+            background-color: rgb(174, 76, 76); 
+        }/*definição apenas a cor*/
+        /*formulário*/
+        .form{
+            display: flex;
+            background-color: rgb(164, 87, 86);
+            width: 600px;
+            margin: 50px;
+            padding: 20px;
+            border-color: rgb(250, 121, 121);
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(246, 224, 224, 0.1);
+            text-align: center;
+            border: 5px solid rgb(254, 189, 189);
+            color: beige;
+            justify-content: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            border: 10px;
+            justify-content: center;
+            
+        }
+        /*para caixinhas de preenchimento*/
+        input{
+            width: 60%;
+            padding: 8px;
+            margin-bottom: 1px;
+            border: 5px solid rgb(239, 115, 115);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /*para mudar a cor quando passar mouse*/
+        input[type="submit"]:hover {
+            background-color: rgb(255, 46, 46);
+            border: 5px solid rgb(254, 189, 189);
+            
+        }
+        .select{
+            width: 100%;
+            margin-top: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #9d2222;
+        }
+        /*finalizar*/
+        .button{
+            width: 20%;
+            margin-top: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: 3px solid rgb(254, 189, 189);
+        }
+        /*tamanho de tudo dentro do formulário*/
+        .elementos{
+            width: 440px;   
+        }
+        /*card*/
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: rgba(147, 0, 0, 0.722);
+            border: 5px solid #9d2222;
+            border-radius: 8px;
+            width: 220px;
+            padding: 15px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            text-align: center;
+            color: beige;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        /*tamanho das imagens*/
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+       
+     </style>  
+</head>
+<body>
+    <!--titulo-->
+    <h1 class="titulo">SEJA BEM VINDO</h1>
+    <p class="paragrafo">site em html</p>
+    <!--parte superior-->
+    <div class="container">
+    <ul class="barra">
+        <li><a href="#">Home</a> </li>
+        <li><a href="#">Sobre</a> </li>
+        <li><a href="#">Serviços</a> </li>
+        <li><a href="#">Contato</a> </li>
+    </ul>
+    </div>
+    <!--login-->
+    <div class="login">
+        <div class="elementos">
+            <h1>Cadastro</h1>
+            <form action="/">
+                <p>
+                    <label for="name">Informe email:</label>
+                    <input 
+                    type="email" 
+                    id="pass" 
+                    name="email" 
+                    placeholder="Digite seu email"/>
+                </p>
+                <p>
+                    <label for="password">Informe senha:</label>
+                    <input 
+                    type="password" 
+                    id="senha" 
+                    name="senha" 
+                    placeholder="Digite sua senha"/>
+                </p>
+                <input class="buttonlogin" 
+                type="submit" 
+                value="Finalizar"/>
+            </form>
+        </div>
+    </div>
+    <!--Listas-->
+    <div class="container-lista">
+        <div class="primeira">
+            <h1>Lista não ordenada</h1>
+                <ul> 
+                    <li>objeto 1</li>
+                    <li>objeto 2</li>
+                    <li>objeto 3</li>
+                </ul>
+        </div>
+        <div class="segunda">
+            <h1>Lista ordenada</h1>
+                <ol>
+                    <li>objeto 1</li>
+                    <li>objeto 2</li>
+                    <li>objeto 3</li>
+                </ol>
+        </div>
+        <div class="caixa">
+            <h1>Caixa</h1>
+            <p>outra caixa</p>
+            <p>Aulas de desenvolvimento web não são faltáveis</p>
+        </div>
+        </div>
+    </div>
+    <!--Formulário-->
+    <div class="form">
+        <div class="elementos">
+            <h2>Cadastro</h2>
+            <form action="/">
+                <p>
+                    <label for="nome">Informe nome:</label>
+                    <input 
+                    type="text" 
+                    id="user" 
+                    name="nome" 
+                    placeholder="Digite seu nome"
+                />
+                </p>
+                <p>
+                    <label for="name">Informe email:</label>
+                    <input 
+                    type="email" 
+                    id="pass" 
+                    name="email" 
+                    placeholder="Digite seu email"/>
+                </p>
+                <p>
+                    <label for="password">Informe senha:</label>
+                    <input 
+                    type="password" 
+                    id="senha" 
+                    name="senha" 
+                    placeholder="Digite sua senha"/>
+                </p>
+                <p>
+                    <!--escolher cor-->
+                    <label for="cor favorita">Informe cor:</label>
+                    <select name="cor" id="sua cor">
+                        <option>Cor</option>
+                        <option>Preto</option>
+                        <option>Azul</option>
+                        <option>Amarelo</option>
+                        <option>Rosa</option>
+                        <option>Vermelho</option>
+                        <option>Verde</option>
+                    </select>
+                </p>
+                <input class="button" 
+                type="submit" 
+                value="Finalizar"/>
+            </form>
+        </div>
+    </div>
+        <!--card-->
+        <div class="card-container">
+            <div class="card">
+                <img src="https://www.voltologo.net/wp-content/uploads/2019/01/livraria-martins-fontes-paulista.jpg" alt="Livros">
+                <h2>Imagem 1</h2>
+                <p>Livros na livraria</p>
+            </div>
+            <div class="card">
+                <img src="https://ih1.redbubble.net/image.5372734654.4295/fposter,small,wall_texture,square_product,600x600.jpg" alt="Velaris">
+                <h2>Imagem 2</h2>
+                <p>Cidade de um livro</p>
+            </div>
+            <div class="card">
+                <img src="https://diaonline.ig.com.br/wp-content/uploads/2020/02/livrarias-asa-sul-brasilia_capa-e1581345840305.jpeg" alt="Livros">
+                <h2>Imagem 2</h2>
+                <p>Mais livros</p>
+            </div>
+        </div>
+        <!--final do card-->
+    
+</body>
+</html>
+

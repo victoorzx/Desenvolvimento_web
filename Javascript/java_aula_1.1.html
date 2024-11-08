@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<head>
+    <title>Javascript prompt </title>
+</head>
+
+<body>
+
+    <script>
+        let idade = prompt('Informe sua idade');
+        let parseIntIdade = parseInt(idade);
+
+
+        if (isNaN(parseIntIdade)){
+            alert('Input icorreto! Você deve digitar um número inteiro');
+        } else {
+            if (parseIntIdade >= 18){
+            alert('Você é maior de idade');
+            } else {
+            alert('Você é menor de idade');
+            }
+        }
+
+        console.log(idade)
+    </script>
+
+
+</body>
+
+</html>

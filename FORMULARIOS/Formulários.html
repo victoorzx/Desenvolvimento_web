@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>formulários</title>
+    <meta charset="uft-8">
+    <style>
+        div {
+            background-color: beige;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <h2>Cadastro</h2>
+    <form action="/">
+        Informe seu nome:
+        <input type="text" id="user" name="nome" placeholder="Digite seu nome">
+        <p></p>
+        Informe email:
+        <input type="email" id="pass" name="email" placeholder="Digite seu email">
+        <p></p>
+        Informe sua senha:
+        <input type="password" id="" name="senha" placeholder="Digite sua senha">
+        <p></p>
+        Informe data de nascimento:
+        <input type="date" name="data_nascmento">
+        <p></p>
+        Informe o sexo:
+        <input type="radio" name="genero"
+        value="masculino">Masculino
+        <input type="radio" name="genero"
+        value="feminino">Feminino 
+        <p></p>
+        Informe o telefone:
+        <input type="number" name="telefone" placeholder="(DD)0 0000 0000" min="1" max="10">
+        <p></p>
+        <input type="checkbox" name="receber email">
+        Concordo em receber email com ofertas
+        <p></p>
+        <input type="color" name="cor_favorita">
+        Informe sua cor cor_favorita
+        <p></p>
+        Adicione uma foto de perfil:
+        <p></p>
+        <input type="file" name="selecionar_arquivo">
+        <p></p>
+        <input type="submit" value="Finalizar">
+        <p></p>
+    </div>
+</form>
+</body>
+</html>
