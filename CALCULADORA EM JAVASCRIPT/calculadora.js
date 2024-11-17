@@ -1,18 +1,44 @@
-//pode colocar varios parâmetros para otimizar o código
-//pensar em limpar o campo para entrar outro valor
-//colocar os núemros em ordem
-
-function atualizaDisplay(valor){
-    const visor = document.getElementById('visor');
+//para atualizar display sempre que fizer um calculo
+function atualizaDisplay(valor) {
+    const visor = document.getElementById("visor");
     console.log(visor);
-    visor.value =  visor.value + valor;
+    visor.value = visor.value + valor;
+    limpavisor = false;
 }
 
-//fazer funçao para cada um dos operadores 
-function operadores(ope){
+function operadores(num) {
     const visor = document.getElementById('visor');
-    console.log(ope);
-    visor.value = visor.value + ope;
+
+    if (num === 'C') {
+        visor.value = '';
+        operadorAtual = null;
+        limpavisor = false;
+    } else if (num === '=') {
+        try {
+            visor.value = eval(visor.value);
+        } catch {
+            visor.value = 'Erro';
+        }
+        operadorAtual = null;
+    } else if (num === '%') {
+        try {
+            let valorAtual = parseFloat(visor.value);
+            if (!isNaN(valorAtual)) {
+                visor.value = valorAtual / 100;
+            } else {
+                visor.value = 'Erro';
+            }
+        } catch {
+            visor.value = 'Erro';
+        }
+        limpavisor = true;
+    } else {
+        if (!limpavisor) {
+            visor.value += num;
+            limpavisor = true;
+        }
+        operadorAtual = num;
+    }
 }
 
 //switch case
