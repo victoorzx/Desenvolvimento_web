@@ -20,18 +20,13 @@ function operadores(num) {
             visor.value = 'Erro';
         }
         operadorAtual = null;
-    } else if (num === '%') {
-        try {
-            let valorAtual = parseFloat(visor.value);
-            if (!isNaN(valorAtual)) {
-                visor.value = valorAtual / 100;
-            } else {
-                visor.value = 'Erro';
-            }
-        } catch {
-            visor.value = 'Erro';
-        }
-        limpavisor = true;
+    } else if (num === '÷') {
+            
+            if (!limpavisor) {
+                visor.value += '÷';
+                limpavisor = true;
+            } 
+            operadorAtual = '÷'
     } else {
         if (!limpavisor) {
             visor.value += num;
@@ -39,6 +34,11 @@ function operadores(num) {
         }
         operadorAtual = num;
     }
+}
+
+function apagarUltimoNumero() {
+    const visor = document.getElementById ('visor');
+    visor.value = visor.value.slice(0,-1);//vai remover o último número
 }
 
 //switch case

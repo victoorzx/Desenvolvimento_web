@@ -19,7 +19,8 @@
         }
 
         .calculadora {
-            width: 360px;
+            width: 100%;
+            max-width: 400px;
             padding: 20px;
             background-color: #f4f7ff;
             border-radius: 12px;
@@ -157,22 +158,20 @@
             </div>
             <div class="row">
                 <div class="col-3">
-                    <button class="btn btn-dark w-100" onclick="operadores('-')">-</button>
+                    <button class="btn btn-dark w-100" onclick="apagarUltimoNumero()">←</button>
                 </div>
                 <div class="col-3">
                     <button class="btn btn-secondary w-100" type="button" onclick="atualizaDisplay('0')"
                         value="0">0</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn btn-dark w-100" onclick="operadores('/')">/</button>
+                    <button class="btn btn-dark w-100" onclick="operadores('-')">-</button>
                 </div>
                 <div class="col-3">
                     <button class="btn btn-dark w-100" onclick="atualizaDisplay('.')">.</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-dark w-100" onclick="operadores('%')">%</button>
-                </div>
-                <div class="col-3">
+
+                <div class="col-6">
                     <button class="btn btn-primary w-100" onclick="operadores('=')">=</button>
                 </div>
                 <div class="col-6">
