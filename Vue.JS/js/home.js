@@ -1,3 +1,4 @@
+console.log("olá robertha")
 const PaginaHome = {
     template: `
         <header>
