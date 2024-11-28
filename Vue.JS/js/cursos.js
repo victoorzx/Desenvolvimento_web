@@ -1,6 +1,6 @@
-const PaginaContato = {
+const PaginaCursos = {
     template: `
-    <!-- Cabeçalho com fundo em degradê -->
+        <!-- Cabeçalho com fundo em degradê -->
     <header>
         <h1>OS MELHORES CURSOS</h1>
     </header>
@@ -119,23 +119,5 @@ const PaginaContato = {
                 </div>
             </div>
         </div> <!-- Fim da terceira linha -->
-    </div> <!-- Fim do container -->
-    `,
-    data() {
-        return{
-            mensagem:""
-        };
-    },
-    methods: {
-        cliquei() {
-            if (this.mensagem.trim()=== ""){
-                alert('Por favor, escreva uma mensagem!'); 
-            } else{
-                alert('Mensagem enviada com sucesso!')
-
-            }
-        }
-    },
-  };
-
-  
+    </div> <!-- Fim do container -->`
+}

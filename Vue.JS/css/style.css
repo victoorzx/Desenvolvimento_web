@@ -1,0 +1,320 @@
+ /* Estilos Globais */
+ body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Estilo para o header */
+  header {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background: linear-gradient(to right, rgb(26, 26, 255), black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    font-family: monospace;
+  }
+
+  /* Barra de menu personalizada */
+  .btn-group {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+  }
+
+  .btn-group a {
+    color: #fffdfd;
+    padding: 14px;
+    text-decoration: none;
+    font-family: monospace;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+  }
+
+  /* Espaçamento para a barra fixa */
+  .spacer {
+    height: 60px;
+  }
+
+  /* Botão de inscrição */
+  .button-section {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .inscricao-btn {
+    width: auto;
+    padding: 8px 16px;
+    background-color: #0070e0;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .inscricao-btn:hover {
+    background-color: #84c4ff;
+  }
+
+  /* Parágrafo engraçado */
+  .paragrafo {
+    color: #ffffff;
+    padding: 10% 5%;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
+
+  /* Carrossel */
+  .carousel {
+    border-radius: 2%;
+    border: 5px solid rgb(203, 223, 241);
+    background-color: #125a9e;
+    max-width: 600px;
+    margin: 40px auto;
+    width: 500px;
+
+  }
+
+  .carousel-inner img {
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: #72bbff;
+  }
+
+  .carousel .titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: #f9fafd;
+    margin-top: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .carousel .descri {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Relatos */
+  .relatos h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #b0d7ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .card {
+    background-color: rgba(44, 0, 147, 0.8);
+    border: 3px solid #d5cdf8;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #42a4ff;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 10px;
+    flex-grow: 1;
+  }
+
+  .card-author {
+    font-size: 0.9rem;
+    text-align: right;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* Formulário */
+  .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #526984;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .form-container h2 {
+    color: #fbfbff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: #fffcfc;
+  }
+
+  .form-control:focus {
+    width: 100%;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .form-check-label {
+    font-size: 14px;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Personalização do Toast */
+  .toast-container .toast {
+    background-color: #e5eff6;
+    border: 1px solid #0dcaf0;
+    color: #0a58ca;
+  }
+
+  .toast-container .toast-header {
+    background-color: #00c1e8;
+    color: #fff;
+  }
+
+  .toast-container .toast-body {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* Personalização das mensagens de erro */
+  .is-invalid {
+    border-color: #ff4d4f;
+    box-shadow: 0 0 0 0.2rem rgba(255, 77, 79, 0.25);
+  }
+
+  .is-invalid~.invalid-feedback {
+    color: #ff4d4f;
+    font-size: 14px;
+  }
+
+  .is-valid {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+  }
+
+  button[type="submit"] {
+    background-color: #0dcaf0;
+    border: none;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0a58ca;
+  }
+
+  /* Estilos para o footer */
+  footer {
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  footer a {
+    color: #edd100;
+    text-decoration: underline;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #1e90ff;
+  }
+
+  footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  footer .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  footer .col-12 {
+    margin-bottom: 10px;
+  }
+
+/* Estilos para responsividade */
+  @media (max-width: 768px) {
+    footer a {
+      display: block;
+      margin: 5px 0;
+    }
+  }

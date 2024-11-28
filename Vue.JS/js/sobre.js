@@ -1,4 +1,4 @@
-const PaginaHome = {
+const PaginaSobre = {
     template: `
         <header>
         <h1>Do Zero ao Tio Meio Rico: A Inspiradora Jornada de Milton Barata!</h1>
@@ -19,46 +19,9 @@ const PaginaHome = {
         </p>
     </div>
   `,
-  data() {
-    return {
-        variavelExemplo : "Texto vindo de variael no componente"
-    }
-  }
+  methods: {
+      cliquei() {
+          alert('click!')
+      }
+  },
 };
-
-const home = Vue.createApp({
-    data() {
-      return {
-        paginaAtual: 'home', // Página inicial
-        componentes: {
-          home: PaginaHome, // carrega o template home
-          sobre: PaginaSobre, // Carrega o componente "Sobre"
-          contato: PaginaContato // Carrega o componente "Contato"
-        },
-        outraVariavelExemplo: "TITULO FIXO POR VARIAVEL"
-      };
-    },
-    methods: {
-        trocaPagina(paginaAtual) {
-            this.paginaAtual = paginaAtual;
-        }
-    },
-    template: `
-      <div>
-        <nav>
-          <!-- Navegação entre as páginas -->
-          <button @click="trocaPagina('home')">Página Inicial</button>
-          <button @click="trocaPagina('sobre')">Sobre Nós</button>
-          <button @click="trocaPagina('contato')">Contato</button>
-        </nav>
-        <h4> {{ outraVariavelExemplo }}
-  
-        <section>
-          <!-- Carrega o componente dinamicamente -->
-          <component :is="componentes[paginaAtual]"></component>
-        </section>
-      </div>    `
-  });
-  
-  // Monta a aplicação Vue no elemento com id "app"
-  home.mount('#app');

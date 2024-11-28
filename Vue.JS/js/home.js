@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-// COMPONENTE HOME (PRINCIPAL)
-=======
-console.log("olá robertha")
-const PaginaHome = {
-    template: `
-        <header>
-        <h1>Do Zero ao Tio Meio Rico: A Inspiradora Jornada de Milton Barata!</h1>
-        <img src="Imagens/sobre o milton.jpeg" alt="Milton" class="milton-img"> <!-- Adicionando a classe à imagem -->
-    </header>
->>>>>>> 11db086e2504289192f843de1d154dff1a8e4679
-
-const PaginaHome = {
+const PaginaHome = { 
   template: `
     <!-- Botão para inscrição -->
     <div class="container button-section">
@@ -295,7 +283,7 @@ const PaginaHome = {
   `,
   data() {
     return {
-      variavelExemplo: "Texto vindo de variael no componente"
+      variavelExemplo: "Texto vindo de variavel no componente"
     }
   }
 };
@@ -307,7 +295,8 @@ const home = Vue.createApp({
       componentes: {
         home: PaginaHome, // carrega o template home
         sobre: PaginaSobre, // Carrega o componente "Sobre"
-        contato: PaginaContato // Carrega o componente "Contato"
+        contato: PaginaContato, // Carrega o componente "Contato"
+        cursos: PaginaCursos // carrega o componete "Cursos"
       },
       outraVariavelExemplo: "TITULO FIXO POR VARIAVEL"
     };
@@ -331,7 +320,8 @@ const home = Vue.createApp({
         <div class="btn-group">
           <button @click="trocaPagina('home')">Home</button>
           <button @click="trocaPagina('sobre')">Sobre</button>
-          <button @click="trocaPagina('contato')">Cursos</button>
+          <button @click="trocaPagina('contato')">Contato</button>
+          <button @click="trocaPagina('cursos)">Cursos</button>
         </div>
       </div>  
       <!--troca dinamica -->
@@ -339,14 +329,7 @@ const home = Vue.createApp({
           <!-- Carrega o componente dinamicamente -->
           <component :is="componentes[paginaAtual]"></component>
       </div>    `
-<<<<<<< HEAD
 });
 
 // Monta a aplicação Vue no elemento com id "app"
-home.mount('#app');
-=======
-  });
-  
-  // Monta a aplicação Vue no elemento com id "app"
-  home.mount('#app');
->>>>>>> 11db086e2504289192f843de1d154dff1a8e4679
+home.mount('#app'); 
