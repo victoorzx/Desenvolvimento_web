@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 // COMPONENTE HOME (PRINCIPAL)
+=======
+console.log("olá robertha")
+const PaginaHome = {
+    template: `
+        <header>
+        <h1>Do Zero ao Tio Meio Rico: A Inspiradora Jornada de Milton Barata!</h1>
+        <img src="Imagens/sobre o milton.jpeg" alt="Milton" class="milton-img"> <!-- Adicionando a classe à imagem -->
+    </header>
+>>>>>>> 11db086e2504289192f843de1d154dff1a8e4679
 
 const PaginaHome = {
   template: `
@@ -329,7 +339,14 @@ const home = Vue.createApp({
           <!-- Carrega o componente dinamicamente -->
           <component :is="componentes[paginaAtual]"></component>
       </div>    `
+<<<<<<< HEAD
 });
 
 // Monta a aplicação Vue no elemento com id "app"
 home.mount('#app');
+=======
+  });
+  
+  // Monta a aplicação Vue no elemento com id "app"
+  home.mount('#app');
+>>>>>>> 11db086e2504289192f843de1d154dff1a8e4679
