@@ -279,6 +279,14 @@ const PaginaHome = {
             </div>
               <a href="https://www.linkedin.com/in/robertha-de-sousa-rezende-0b15b8215/?originalSubdomain=br">Contato</a>
       </footer>
+      <script>
+      // Inicializa o carrossel
+      const carouselElement = document.querySelector('#carouselExampleIndicators');
+      const carousel = new bootstrap.Carousel(carouselElement, {
+        interval: 2000,
+        touch: true
+      });
+    </script>
   
   `,
   data() {
@@ -296,7 +304,8 @@ const home = Vue.createApp({
         home: PaginaHome, // carrega o template home
         sobre: PaginaSobre, // Carrega o componente "Sobre"
         contato: PaginaContato, // Carrega o componente "Contato"
-        cursos: PaginaCursos // carrega o componete "Cursos"
+        cursos: PaginaCursos, // carrega o componete "Cursos"
+        formulario: PaginaFormulario
       },
       outraVariavelExemplo: "TITULO FIXO POR VARIAVEL"
     };
@@ -321,7 +330,8 @@ const home = Vue.createApp({
           <button @click="trocaPagina('home')">Home</button>
           <button @click="trocaPagina('sobre')">Sobre</button>
           <button @click="trocaPagina('contato')">Contato</button>
-          <button @click="trocaPagina('cursos)">Cursos</button>
+          <button @click="trocaPagina('cursos')">Cursos</button>
+          <button @click="trocaPagina('formulario')">Formulario</button>
         </div>
       </div>  
       <!--troca dinamica -->
@@ -333,3 +343,6 @@ const home = Vue.createApp({
 
 // Monta a aplicação Vue no elemento com id "app"
 home.mount('#app'); 
+
+
+

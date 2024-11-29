@@ -120,6 +120,68 @@ const PaginaContato = {
             </div>
         </div> <!-- Fim da terceira linha -->
     </div> <!-- Fim do container -->
+    <script>
+      // Captura o formulário correto pelo ID
+      const form = document.getElementById('formInscricao'); // Use o ID correto aqui
+      // Adiciona um listener para a submissão do formulário
+      form.addEventListener('submit', function (event) {
+        // Se o formulário não for válido, previne o envio
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+          // Exibe mensagens customizadas se algum campo for inválido
+          form.querySelectorAll(':invalid').forEach((input) => {
+            input.setCustomValidity('');
+            // Mensagens customizadas por campo
+            if (input.validity.valueMissing) {
+              if (input.id === 'nome') {
+                input.setCustomValidity('Por favor, insira seu nome.');
+              } else if (input.id === 'nascimento') {
+                input.setCustomValidity('Por favor, insira sua data de nascimento.');
+              } else if (input.id === 'endereco') {
+                input.setCustomValidity('Por favor, insira seu endereço.');
+              } else if (input.id === 'email') {
+                input.setCustomValidity('Por favor, insira seu email.');
+              } else if (input.id === 'sexo') {
+                input.setCustomValidity('Por favor, selecione seu sexo.');
+              } else if (input.id === 'contato') {
+                input.setCustomValidity('Por favor, insira seu número de contato.');
+              } else if (input.id === 'aceiteTermos') {
+                input.setCustomValidity('Você deve aceitar os termos e condições.');
+              }
+            }
+
+            input.reportValidity();
+          });
+        }
+
+        // Adiciona as classes de validação para os estilos Bootstrap
+        form.classList.add('was-validated');
+      }, false);
+    </script>
+
+    <script>
+      // Captura o formulário e o toast
+      const toastLiveExample = document.getElementById('liveToast');
+      const emailInput = document.getElementById('email');
+      // Listener para a submissão do formulário
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita o envio padrão para processar a lógica
+        // Verifica se o formulário é válido
+        if (form.checkValidity()) {
+          // Se o formulário for válido, exibe o toast
+          const toast = new bootstrap.Toast(toastLiveExample);
+          toast.show();
+          // Limpa o formulário após o envio
+          form.reset();
+          // Remove classes de validação após o reset
+          form.classList.remove('was-validated');
+          emailInput.classList.remove('is-valid');
+        } else {
+          event.preventDefault(); // Isso vai evitar o envio caso algo esteja errado
+        }
+      });
+    </script>
     `,
     data() {
         return{
