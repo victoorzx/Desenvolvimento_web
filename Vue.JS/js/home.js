@@ -269,7 +269,6 @@ const PaginaHome = {
           </div>
         </div>
       </div>
-  
     <hr>
       <footer>
         <div class="container text-center">
