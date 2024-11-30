@@ -269,6 +269,7 @@ const PaginaHome = {
           </div>
         </div>
       </div>
+    </div> 
   
     <hr>
       <footer>
@@ -291,6 +292,7 @@ const PaginaHome = {
         touch: true
       });
     </script>
+  
   `,
   data() {
     return {
