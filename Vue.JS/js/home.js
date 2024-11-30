@@ -279,6 +279,7 @@ const PaginaHome = {
             </div>
               <a href="https://www.linkedin.com/in/robertha-de-sousa-rezende-0b15b8215/?originalSubdomain=br">Contato</a>
           </div>
+        </div>
       </footer>
       <script>
       // Inicializa o carrossel
