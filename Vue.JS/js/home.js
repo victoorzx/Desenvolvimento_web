@@ -1,4 +1,4 @@
-const PaginaHome = { 
+const PaginaHome = {
   template: `
     <!-- Botão para inscrição -->
     <div class="container button-section">
@@ -51,7 +51,7 @@ const PaginaHome = {
                 <button type="submit" class="inscricao-btn">Inscreva-se</button>
               </form>
             </div>
-          </div>
+        </div>
   
           <div class="carousel-item">
             <img src="Imagens/carrossel2.jpeg" class="d-block w-100" alt="Meio Rico">
@@ -126,6 +126,7 @@ const PaginaHome = {
               </form>
             </div>
           </div>
+    </div>
           <!-- Botões de controle do carrossel -->
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -269,7 +270,7 @@ const PaginaHome = {
         </div>
       </div>
   
-      <hr>
+    <hr>
       <footer>
         <div class="container text-center">
           <div class="row">
@@ -279,8 +280,10 @@ const PaginaHome = {
             </div>
               <a href="https://www.linkedin.com/in/robertha-de-sousa-rezende-0b15b8215/?originalSubdomain=br">Contato</a>
           </div>
+        </div>
       </footer>
-      <script>
+    </hr>
+    <script>
       // Inicializa o carrossel
       const carouselElement = document.querySelector('#carouselExampleIndicators');
       const carousel = new bootstrap.Carousel(carouselElement, {
@@ -343,7 +346,7 @@ const home = Vue.createApp({
 });
 
 // Monta a aplicação Vue no elemento com id "app"
-home.mount('#app'); 
+home.mount('#app');
 
 
 
