@@ -269,6 +269,7 @@ const PaginaHome = {
           </div>
         </div>
       </div>
+    </div> 
   
     <hr>
       <footer>
