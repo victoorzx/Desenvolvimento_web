@@ -291,7 +291,6 @@ const PaginaHome = {
         touch: true
       });
     </script>
-  
   `,
   data() {
     return {
