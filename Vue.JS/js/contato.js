@@ -1,42 +1,89 @@
 const PaginaContato = {
-    template: `
-      <div class="container">
+    template:
+     `
+    <!-- Cabeçalho com fundo em degradê -->
+    <header>
+        <h1>Contatos dos Responsáveis</h1>
+    </header>
+
+    <!-- Seção com as informações de contato -->
+    <div class="container">
+        <p class="container paragrafo">
+            Abaixo estão os contatos dos responsáveis. Caso tenha alguma dúvida ou precise de mais informações, entre em contato!
+        </p>
+    </div>
+
+    <!-- Lista de Responsáveis -->
+    <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <img src="Imagens/contato.jpg" class="img-fluid" alt="Imagem de contato">
-            <h1>Entre em contato conosco</h1>
-            <form>
-              <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome"   
-   required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="form-group">   
-  
-                <label for="mensagem">Mensagem:</label>   
-  
-                <textarea class="form-control" id="mensagem" rows="3" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form> 1    
-  1.
-  github.com
-  github.com
-  
-            <h2>Nossos Contatos</h2>
-            <p>
-              <strong>David:</strong> david@email.com<br>
-              <strong>Felipe:</strong> felipe@email.com<br>
-              <strong>Roberta:</strong> roberta@email.com<br>
-              <strong>Victor:</strong> victor@email.com
-            </p>
-          </div>
-        </div>
-      </div>
+            <!-- Responsável 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/responsavel1.jpg" class="card-img-top" alt="Responsável 1">
+                    <div class="card-body">
+                        <h5 class="card-title">David Bryan</h5>
+                        <p class="card-text">Coordenadora de Projetos</p>
+                        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                        <p><strong>LinkedIn:</strong> 
+                            <a href="https:" target="_blank">Ana Souza no LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsável 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/responsavel2.jpg" class="card-img-top" alt="Responsável 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Felipe Fernandes</h5>
+                        <p class="card-text">Gerente de Marketing</p>
+                        <p><strong>Telefone:</strong> (21) 91234-5678</p>
+                        <p><strong>LinkedIn:</strong> 
+                            <a href="https:" target="_blank">Carlos Silva no LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsável 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/responsavel3.jpg" class="card-img-top" alt="Responsável 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Robertha Rezende</h5>
+                        <p class="card-text">Diretora de Comunicação</p>
+                        <p><strong>Telefone:</strong> (31) 98765-4321</p>
+                        <p><strong>LinkedIn:</strong> 
+                            <a href="https:" target="_blank">Fernanda Lima no LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Fim da primeira linha -->
+
+        <!-- Responsável 4 -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/responsavel4.jpg" class="card-img-top" alt="Responsável 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Victor Araújo</h5>
+                        <p class="card-text">Supervisor de TI</p>
+                        <p><strong>Telefone:</strong> (41) 91234-6789</p>
+                        <p><strong>LinkedIn:</strong> 
+                            <a href="https:" target="_blank">Roberto Alves no LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Fim da segunda linha -->
+    </div> <!-- Fim do container -->
     `,
-    // ... outros métodos e dados
+    data() {
+        return {
+            // Dados adicionais podem ser adicionados aqui, caso necessário
+        };
+    },
 };
+
