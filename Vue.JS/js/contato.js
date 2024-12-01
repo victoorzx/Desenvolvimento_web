@@ -19,7 +19,7 @@ const PaginaContato = {
             <!-- Responsável 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="Imagens/responsavel1.jpg" class="card-img-top" alt="Responsável 1">
+                    <img src="Imagens/David.png" class="card-img-top" alt="Responsável 1">
                     <div class="card-body">
                         <h5 class="card-title">David Bryan</h5>
                         <p class="card-text">Coordenadora de Projetos</p>
@@ -34,7 +34,7 @@ const PaginaContato = {
             <!-- Responsável 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="Imagens/responsavel2.jpg" class="card-img-top" alt="Responsável 2">
+                    <img src="Imagens/Felipe.png" class="card-img-top" alt="Responsável 2">
                     <div class="card-body">
                         <h5 class="card-title">Felipe Fernandes</h5>
                         <p class="card-text">Gerente de Marketing</p>
@@ -49,7 +49,7 @@ const PaginaContato = {
             <!-- Responsável 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="Imagens/responsavel3.jpg" class="card-img-top" alt="Responsável 3">
+                    <img src="Imagens/Robertha.png" class="card-img-top" alt="Responsável 3">
                     <div class="card-body">
                         <h5 class="card-title">Robertha Rezende</h5>
                         <p class="card-text">Diretora de Comunicação</p>
@@ -66,7 +66,7 @@ const PaginaContato = {
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="Imagens/responsavel4.jpg" class="card-img-top" alt="Responsável 4">
+                    <img src="Imagens/Victor.png" class="card-img-top" alt="Responsável 4">
                     <div class="card-body">
                         <h5 class="card-title">Victor Araújo</h5>
                         <p class="card-text">Supervisor de TI</p>
