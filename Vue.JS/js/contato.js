@@ -23,6 +23,7 @@ const PaginaContato = {
                     <div class="card-body">
                         <h5 class="card-title">David Bryan</h5>
                         <p class="card-text">Coordenadora de Projetos</p>
+                        <p><strong>Telefone:</strong> (11) 98765-4321</p>
                         <p><strong>LinkedIn:</strong> 
                             <a href="https:" target="_blank">Ana Souza no LinkedIn</a>
                         </p>
@@ -37,6 +38,7 @@ const PaginaContato = {
                     <div class="card-body">
                         <h5 class="card-title">Felipe Fernandes</h5>
                         <p class="card-text">Gerente de Marketing</p>
+                        <p><strong>Telefone:</strong> (21) 91234-5678</p>
                         <p><strong>LinkedIn:</strong> 
                             <a href="https:" target="_blank">Carlos Silva no LinkedIn</a>
                         </p>
@@ -51,8 +53,9 @@ const PaginaContato = {
                     <div class="card-body">
                         <h5 class="card-title">Robertha Rezende</h5>
                         <p class="card-text">Diretora de Comunicação</p>
+                        <p><strong>Telefone:</strong> (31) 98765-4321</p>
                         <p><strong>LinkedIn:</strong> 
-                            <a href="https:" https://www.linkedin.com/in/robertha-de-sousa-rezende-0b15b8215/">Robertha de Sousa Rezende no LinkedIn</a>
+                            <a href="https:" target="_blank">Fernanda Lima no LinkedIn</a>
                         </p>
                     </div>
                 </div>
@@ -67,6 +70,7 @@ const PaginaContato = {
                     <div class="card-body">
                         <h5 class="card-title">Victor Araújo</h5>
                         <p class="card-text">Supervisor de TI</p>
+                        <p><strong>Telefone:</strong> (41) 91234-6789</p>
                         <p><strong>LinkedIn:</strong> 
                             <a href="https:" target="_blank">Roberto Alves no LinkedIn</a>
                         </p>
@@ -82,6 +86,3 @@ const PaginaContato = {
         };
     },
 };
-
-//#foragit
-
